@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Projects</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Welcome section */
+        .welcome-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .click-button {
+            padding: 10px 20px;
+            font-size: 1em;
+            font-weight: bold;
+            background-color: white;
+            color: black;
+            border: 2px solid black;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .click-button:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Projects section */
+        .container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .box {
+            width: 150px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+            font-weight: bold;
+            background-color: white;
+            margin: 10px;
+            text-align: center;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        #sql-box { background-color: #e0f7fa; }
+        #tableau-box { background-color: #fce4ec; }
+        #powerbi-box { background-color: #fff3e0; }
+        #excel-box { background-color: #e8f5e9; }
+        #profile-box { background-color: #f3e5f5; }
+
+        .section {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Welcome Section -->
+    <div class="welcome-container" id="welcome">
+        <h1>WELCOME</h1>
+        <button class="click-button" onclick="showProjects()">Click</button>
+    </div>
+
+    <!-- Projects Section -->
+    <div id="projects" style="display: none;">
+        <h1>PROJECTS</h1>
+        <div class="container">
+            <div class="box" id="sql-box" onclick="showSection('sql')">SQL</div>
+            <div class="box" id="tableau-box" onclick="showSection('tableau')">TABLEAU</div>
+            <div class="box" id="powerbi-box" onclick="showSection('powerbi')">POWER BI</div>
+            <div class="box" id="excel-box" onclick="showSection('excel')">EXCEL</div>
+            <div class="box" id="profile-box" onclick="showSection('profile')">PROFILE</div>
+        </div>
+
+        <div class="section" id="sql">
+            <h1>SPOTIFY DATASET</h1>
+            <p><a href="https://mail.google.com/mail/u/1?ui=2&ik=031b3fe218&attid=0.2&permmsgid=msg-a:r-2086935642835974591&th=192e6ecf80e080cf&view=att&disp=inline&realattid=f_m2yhw9t01">ORIGINAL</a></p>
+            <p><a href="https://github.com/Balavarshini01/Projects">code details</a></p>
+            <h1>BANK TRANSACTION</h1>
+            <p><a href="https://drive.google.com/file/d/1Q9m44N2kxSGU0CASnzMYB__ggoC31CdV/view?usp=drivesdk">ORIGINAL</a></p>
+            <p><a href="https://github.com/Balavarshini01/Projects">GITHUB</a></p>
+        </div>
+
+        <div class="section" id="tableau">
+            <h1>HUMAN RESOURCE</h1>
+            <p><a href="https://mail.google.com/mail/u/1?ui=2&ik=031b3fe218&attid=0.3&permmsgid=msg-a:r-2086935642835974591&th=192e6ecf80e080cf&view=att&disp=safe&realattid=f_m2yhwtff2">ORIGINAL</a></p>
+            <p><a href="https://mail.google.com/mail/u/1?ui=2&ik=031b3fe218&attid=0.1&permmsgid=msg-a:r-2086935642835974591&th=192e6ecf80e080cf&view=att&disp=inline&realattid=f_m2yhvskc0">PAGE1 PDF</a></p>
+            <p><a href="https://mail.google.com/mail/u/1?ui=2&ik=031b3fe218&attid=0.2&permmsgid=msg-a:r-2086935642835974591&th=192e6ecf80e080cf&view=att&disp=inline&realattid=f_m2yhw9t01">PAGE2 PDF</a></p>
+            <h1>SALES DASHBOARD</h1>
+            <p><a href="https://drive.google.com/file/d/1jBLnLyZvqC2DPgrPkPcj4rCx_CM5vKnY/view?usp=drivesdk">ORIGINAL</a></p>
+            <p><a href="https://drive.google.com/file/d/1D71p9vBoY5LrdvZ_C9LjeO_PoAO9F1gF/view?usp=drivesdk">PAGE1 PDF</a></p>
+            <p><a href="https://drive.google.com/file/d/1GUE4BpP7IxrT1UPNJpqOc_KTwh5fo6Ew/view?usp=drivesdk">PAGE2 PDF</a></p>
+        </div>
+
+        <div class="section" id="powerbi">
+            <h1>WORLD WIDE TRADE</h1>
+            <p><a href="https://mail.google.com/mail/u/1?ui=2&ik=031b3fe218&attid=0.1&permmsgid=msg-a:r-6457036079168510165&th=192e6dda4a1fa1dd&view=att&disp=safe&realattid=f_m2ygqn050">ORIGINAL</a></p>
+            <p><a href="https://mail.google.com/mail/u/1?ui=2&ik=031b3fe218&attid=0.1&permmsgid=msg-a:r-6457036079168510165&th=192e6dda4a1fa1dd&view=att&disp=safe&realattid=f_m2ygqn050">PDF</a></p>
+            <h1>CAR SALES</h1>
+            <p><a href="https://drive.google.com/file/d/19Cgk4d5De2ZzIKdSUexAlQpwgNlLA2WO/view?usp=drivesdk">ORIGINAL</a></p>
+            <p><a href="https://drive.google.com/file/d/1PUnS81zdyo_epqPjCWNmhJCMZMzHxLjD/view?usp=drivesdk">PDF</a></p>
+            <h1>CLIMATE CHANGES</h1>
+            <p><a href="https://drive.google.com/file/d/1Zbnb6X_7Fgel1ShtKfF7tu5F8t-TxSf1/view?usp=drivesdk">ORIGINAL</a></p>
+            <p><a href="https://drive.google.com/file/d/1u4oOam4d_jnNJVtbs_gdUv8hUl__H21T/view?usp=drivesdk">PDF</a></p>
+            <h1>HOTEL BOOKING</h1>
+            <p><a href="https://drive.google.com/file/d/1hZQAnYXZQLJKn6Jfz4zPn1AIgYxb_5Vo/view?usp=drivesdk">PDF</a></p>
+            <p><a href="https://drive.google.com/file/d/1JGfY2OksiqkqoNrSpZ7rsPg8Gnz3cMTk/view?usp=drivesdk">ORIGINAL</a></p>
+        </div>
+
+        <div class="section" id="excel">
+            <h1>SALES STATISTICS</h1>
+            <p><a href="https://drive.google.com/file/d/1_2GQFhPQUBbzySVwzSiPSLw-q3NPOI1E/view?usp=drivesdk">ORIGINAL</a></p>
+            <p><a href="https://drive.google.com/file/d/1GNgdYZ2t8gZy91iC-udPET6UStMDmD9f/view?usp=drivesdk">PDF</a></p>
+            <p><a href="https://drive.google.com/file/d/1uj7R5eRUXg9q_WeHQ229oTdis4zZ4DRs/view?usp=drivesdk">PDF1</a></p>
+            <p><a href="https://drive.google.com/file/d/1_WNwCqTj_Eh-B6puFPrLHme_9cyxVMSM/view?usp=drivesdk">PDF2</a></p>
+            <p><a href="https://drive.google.com/file/d/1kTXQR6W6dInaA7i8dUHwtdME3LQOtvuF/view?usp=drivesdk">PDF3</a></p>
+        </div>
+
+        <div class="section" id="profile">
+            <h1>LINKEDIN PROFILE</h1>
+            <p><a href="https://www.linkedin.com/in/balavarshini-anandhapadmanaban-bb5465303?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BGtge2FVETyCJxPNlwy4JEg%3D%3D">PROFILE</a></p>
+        </div>
+    </div>
+
+    <script>
+        function showProjects() {
+            document.getElementById('welcome').style.display = 'none';
+            document.getElementById('projects').style.display = 'block';
+        }
+
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
